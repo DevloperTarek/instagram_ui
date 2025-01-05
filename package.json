@@ -1,0 +1,21 @@
+{
+  "name": "instagram_ui",
+  "version": "1.0.0",
+  "description": "this is instagram UI design by bootstrap5 and sass",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass sass/style.scss css/style.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DevloperTarek/instagram_ui.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/DevloperTarek/instagram_ui/issues"
+  },
+  "homepage": "https://github.com/DevloperTarek/instagram_ui#readme"
+}
