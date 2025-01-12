@@ -1,7 +1,444 @@
-$color : #fff;
-$bg:red;
 
-.heading{
-       color: $color;
-       background-color: $bg;
+/*
+  Theme Name: Name - Multipurpose HTML Template
+  Author: mdsalim400@gmail.com
+  Support: admin@gmail.com
+  Description: Creative  HTML5 template.
+  Version: 1.0
+*/
+
+/* CSS Index
+-----------------------------------
+1. Theme default css
+2. header
+3. slider
+4. about-area
+5. features-box
+6. department
+7. team
+8. video-area
+9. counter
+10. footer
+*/
+
+
+
+/* 1. Theme default css */
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+// importing all partials
+@import './utilites/colors';
+@import './utilites/default';
+@import './utilites/extand';
+@import './utilites/functions';
+@import './utilites/mixins';
+@import './utilites/variable';
+
+ body {
+font-family: "Inter Tight", sans-serif;
+font-size: 14px;
+font-weight: 400;
+transition: all 0.4s ease-in-out 0s;
+line-height: 22px;
+color: var(--body-color);
+outline: none;
+font-style: normal;
+overflow-x: hidden !important;
 }
+.container{
+       max-width: 1240px;
+       margin: auto;
+       padding: 1rem;
+}
+.img {
+	max-width: 100%;
+	transition: all 0.4s ease-out 0s;
+}
+.f-left {
+	float: left
+}
+.f-right {
+	float: right
+}
+.fix {
+	overflow: hidden
+}
+a,
+.button {
+	-webkit-transition: all 0.3s ease-out 0s;
+	-moz-transition: all 0.3s ease-out 0s;
+	-ms-transition: all 0.3s ease-out 0s;
+	-o-transition: all 0.3s ease-out 0s;
+	transition: all 0.3s ease-out 0s;
+}
+a:focus,
+.button:focus {
+	text-decoration: none;
+	outline: none;
+}
+a:focus,
+a:hover,
+.portfolio-cat a:hover,
+.footer -menu li a:hover {
+	color: #2B96CC;
+	text-decoration: none;
+}
+a,
+button {
+	color: #1696e7;
+	outline: medium none;
+}
+button:focus,input:focus,input:focus,textarea,textarea:focus{outline: 0}
+.uppercase {
+	text-transform: uppercase;
+}
+.capitalize {
+	text-transform: capitalize;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Inter Tight", sans-serif;
+	font-weight: bold;
+	color: var(--heading-color);
+	text-transform: uppercase;
+}
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+	color: inherit;
+}
+h1 {
+	font-size: 64px;
+	line-height: 64px;
+}
+h2 {
+	font-size: 48px;
+}
+h3 {
+	font-size: 28px;
+}
+h4 {
+	font-size: 24px;
+}
+h5 {
+	font-size: 20px;
+}
+h6 {
+	font-size: 16px;
+}
+ul {
+	margin: 0px;
+	padding: 0px;
+}
+li {
+	list-style: none
+}
+p.another_color{
+	color: #495057;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 28px;
+}
+
+p {
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 22px;
+	color: $p-color;
+}
+span{
+       font-size: 40px;
+       font-weight: bold;
+       color: $black;
+}
+hr {
+	border-bottom: 1px solid #eceff8;
+	border-top: 0 none;
+	margin: 30px 0;
+	padding: 0;
+}
+label {
+	color: #7e7e7e;
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: 400;
+}
+*::-moz-selection {
+	background: #d6b161;
+	color: #fff;
+	text-shadow: none;
+}
+::-moz-selection {
+	background: #444;
+	color: #fff;
+	text-shadow: none;
+}
+::selection {
+	background: #444;
+	color: #fff;
+	text-shadow: none;
+}
+*::-moz-placeholder {
+	color: #555555;
+	font-size: 14px;
+	opacity: 1;
+}
+*::placeholder {
+	color: #555555;
+	font-size: 14px;
+	opacity: 1;
+}
+.theme-overlay {
+	position: relative
+}
+.theme-overlay::before {
+	background: #1696e7 none repeat scroll 0 0;
+	content: "";
+	height: 100%;
+	left: 0;
+	opacity: 0.6;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+.separator {
+	border-top: 1px solid #f2f2f2
+}
+/* button style */
+.butn.butn-dark{
+       background-color: $black;
+}
+.butn.butn-light{
+       background-color: $white none repeat scroll 0 0;
+       color: $black;
+       border: 1px solid $border-butn;
+}
+.butn {
+	-moz-user-select: none;
+	// /* background: #1696e7 none repeat scroll 0 0; */
+	text-decoration: none;
+	background-color: $black;
+	border: none;
+	border-radius: 30px;
+	color: $white;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 16px;
+	font-weight: 500;
+	letter-spacing: 0.5px;
+	line-height: 28px;
+	margin-bottom: 0;
+	padding: 15px 67px;
+	z-index: 1;
+	text-align: center;
+	text-transform: capitalize;
+	touch-action: manipulation;
+	transition: all 0.4s ease 0s;
+	vertical-align: middle;
+	white-space: nowrap;
+}
+.breadcrumb > .active {
+	color: #888;
+}
+.owl-carousel .owl-nav div {
+	background: rgba(255, 255, 255, 0.8) none repeat scroll 0 0;
+	height: 40px;
+	left: 20px;
+	line-height: 40px;
+	opacity: 0;
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	transform: translateY(-50%);
+	transition: all 0.3s ease 0s;
+	visibility: hidden;
+	width: 40px;
+}
+.owl-carousel .owl-nav div.owl-next {
+	left: auto;
+	right: 20px;
+}
+.owl-carousel:hover .owl-nav div {
+	opacity: 1;
+	visibility: visible;
+}
+.owl-carousel .owl-nav div:hover {
+	background: #2B96CC;
+	color: #fff
+}
+// default bg classes
+.section-bg{
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+/* scrollUp */
+#scrollUp {
+	background: #7DBA2F;
+	height: 35px;
+	width: 35px;
+	right: 50px;
+	bottom: 77px;
+	color: #fff;
+	font-size: 20px;
+	text-align: center;
+	border-radius: 50%;
+	font-size: 20px;
+	line-height: 34px;
+}
+#scrollUp:hover {
+	background: #444;
+}
+
+// css variable css
+:root{
+	--primary: #5365c6;
+	--primary-light: rgba(83, 101, 198, 0.7);
+	--secondary: #ff5630;
+	--body-color: #6f7175;
+	--body-color-light: #999999;
+	--body-bg: #ffffff;
+	--heading-color: #0a1624;
+	--color-link: #0a1624;
+	--color-link-hover: var(--primary);
+	--border-color: #e1e1e1;
+	--border-light-color: #f5f5f5;
+	--shadow: 0px 6px 15px rgba(0, 0, 0, .12);
+}
+
+.primary-color {
+	color: var(--primary);
+}
+.secondary-color{
+	color: var(--secondary);
+}
+// header top
+header.header-top-area p a {
+       position: relative;
+       text-decoration: none;
+       color: white;
+       display: inline-block;
+       transition: .4s;
+   }
+   
+   header.header-top-area p a::before {
+       position: absolute;
+       bottom: 0;
+       left: 0;
+       width: 100%;
+       height: 1px;
+       background-color: $white;
+       content: "";
+   }
+   
+   header.header-top-area p a:hover {
+       color: rgb(238, 95, 95);
+   }
+   #stikcy-header{
+	position: absolute;
+	top: 80px;
+	left: 0;
+	width: 100%;
+	height: auto;
+	background-color: transparent;
+	z-index: 99;
+   }
+   #stikcy-header.sticky {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	transition: .9s ease-out;
+	animation: fadeIn;
+	animation-duration: .5s;
+	width: 100%;
+	box-shadow: 0 5px 10px 0 rgba(0,0,0,.80);
+	background: rgba(0,0,0,.60);
+   }
+   a.butn.butn-light {
+	position: relative;
+	z-index: 1;
+	background-color: #fff;
+	border: none;
+	overflow: hidden;
+   }
+   a.butn.butn-light::before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 100%;
+	z-index: -1;
+	border-radius: 30px;
+	background: $light-black;
+	color: $white;
+	content: "";
+	transition: .4s;
+   }
+   a.butn.butn-light::after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 100%;
+	z-index: -1;
+	border-radius: 30px;
+	background: $border-butn;
+	color: $white;
+	content: "";
+	transition: .4s ease-in-out;
+	transition-delay: .1s;
+   }
+   a.butn.butn-light:hover::before {
+	width: 100%;
+   }
+   a.butn.butn-light:hover::after {
+	width: 100%;
+   }
+   a.butn.butn-dark::after {
+	position: absolute;
+	content: "";
+	top: 0;
+	left: 0;
+	width: 0;
+	z-index: -1;
+	border-radius: 30px;
+	height: 100%;
+	background: rgba(0,0,0,.10);
+	transition: 0.5s;
+	transition-delay: 0.1s;
+   }
+   a.butn.butn-dark:hover::after {
+	width: 100%;
+	color: #000;
+   }
+//   header top area
+.select-item select {
+border: none;
+background:transparent;
+box-shadow:0 0px 5px 0 rgba(0,0,0,.5);
+}
+
+.select-item select:focus {
+outline: none;
+}
+.search-bar {
+	display: inline-block;
+}
+
+      
+      .search-bar input {
+	border: 1px solid red;
+	width: 100%;
+	min-width: 500px;
+	padding: 20px 10px;
+	font-size: 16px;
+	font-weight: 500;
+	text-transform: capitalize;
+      }
