@@ -19,23 +19,45 @@ $(window).on('scroll', function () {
 		$("#stikcy-header").removeClass("sticky");
 	}
 });
-// sticky header
-// const header = $("#stikcy-header");
-// const stickyClass = "sticky";
+/* magnificPopup img view */
+$('.team-member-img').magnificPopup({
+	type: 'image',
+	gallery: {
+	  enabled: true
+	}
+});
 
-// $(window).on("scroll", function () {
-// if ($(window).scrollTop() > 5) {
-// header.addClass(stickyClass).css("background", "#222");
-// } else {
-// header.removeClass(stickyClass).css("background", "#333");
-// }
-// });
-
-
-
+/* magnificPopup video view */
+$('.video-popup-button').magnificPopup({
+	type: 'iframe'
+});
+	$('.team-member-carousel').owlCarousel({
+	loop:true,// ইনফিনিট লুপ চালু
+	items:4,
+    margin: 30, // আইটেমের মধ্যে ব্যবধান
+    autoplay: true, // স্বয়ংক্রিয় চলা
+    autoplayTimeout: 1500, // প্রতি স্লাইড ৩ সেকেন্ড ধরে
+    autoplaySpeed: 1000, // ধীরগতির ট্রানজিশন
+    //smartSpeed: 1000, // স্মার্ট ট্রানজিশন
+    slideBy: 1, // একবারে একটি আইটেম স্লাইড হবে
+    dots: true, // ডটস লুকানো
+    nav: false, // নেভিগেশন লুকানো
+    stagePadding: 0, // গ্যাপ বন্ধ করা
+    responsive: {
+      0: {
+        items: 1 // মোবাইলে ১টি আইটেম
+      },
+      600: {
+        items: 2 // ট্যাবলেটে ৩টি আইটেম
+      },
+      1000: {
+        items: 4 // ডেস্কটপে ৫টি আইটেম
+      }
+    }
+	});
 // mainSlider
 function mainSlider() {
-	var BasicSlider = $('.slider-active');
+	var BasicSlider = $('');
 	BasicSlider.on('init', function (e, slick) {
 		var $firstAnimatingElements = $('.single-slider:first-child').find('[data-animation]');
 		doAnimations($firstAnimatingElements);
@@ -72,44 +94,6 @@ function mainSlider() {
 	}
 }
 mainSlider();
-
-
-// owlCarousel
-$('.owl-carousel').owlCarousel({
-    loop:true,
-    margin:0,
-	items:1,
-	navText:['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
-    nav:true,
-	dots:false,
-    responsive:{
-        0:{
-            items:1
-        },
-        767:{
-            items:3
-        },
-        992:{
-            items:5
-        }
-    }
-})
-
-
-/* magnificPopup img view */
-$('.popup-image').magnificPopup({
-	type: 'image',
-	gallery: {
-	  enabled: true
-	}
-});
-
-/* magnificPopup video view */
-$('.popup-video').magnificPopup({
-	type: 'iframe'
-});
-
-
 // isotop
 $('.grid').imagesLoaded( function() {
 	// init Isotope
@@ -147,8 +131,14 @@ $.scrollUp({
 	animation: 'fade', // Fade, slide, none
 	animationInSpeed: 200, // Animation in speed (ms)
 	animationOutSpeed: 200, // Animation out speed (ms)
-	scrollText: '<i class="icofont icofont-long-arrow-up"></i>', // Text for element
+	scrollText: '<i class="ri ri-arrow-up-line"></i>', // Text for element
 	activeOverlay: false, // Set CSS color to display scrollUp active point, e.g '#00FFFF'
+});
+
+// counter up 
+$('.counter').counterUp({
+   delay: 90,
+   time: 2000
 });
 
 // WOW active

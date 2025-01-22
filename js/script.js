@@ -1,17 +1,18 @@
 // image file image preview
-document.getElementById('form-label').addEventListener('change',(event)=>{
-       const selected_files = event.target.files[0];
-      if(selected_files){
-              document.getElementById('file-name').innerText = `Files Name :: ${selected_files.name}`
-              const fileReader = new FileReader();
-              fileReader.onload = (e)=>{
-                     document.getElementById('preview-img').src = e.target.result;
-              }
-              fileReader.readAsDataURL(selected_files);
-      }else{
-              document.getElementById('preview-img').innerHTML = "Not preview image selected";
-      }
-})
+// document.getElementById('form-label').addEventListener('change',(event)=>{
+//        const selected_files = event.target.files[0];
+//       if(selected_files){
+        //       document.getElementById('file-name').innerText = `Files Name :: ${selected_files.name}`
+        //       const fileReader = new FileReader();
+        //       fileReader.onload = (e)=>{
+                //      document.getElementById('preview-img').src = e.target.result;
+        //       }
+        //       fileReader.readAsDataURL(selected_files);
+//       }else{
+        //       document.getElementById('preview-img').innerHTML = "Not preview image selected";
+//       }
+// })
+
 
 
 

@@ -691,13 +691,14 @@
 	position: relative;
 }
 [data-overlay]::before {
-	background: #000 none repeat scroll 0 0;
+	background: #000 none no-repeat scroll 0 0;
 	content: "";
 	height: 100%;
 	left: 0;
 	position: absolute;
 	top: 0;
 	width: 100%;
+   // overflow: hidden;
 	z-index: 1;
 }
 [data-overlay="3"]::before {

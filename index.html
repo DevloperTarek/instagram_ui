@@ -3,54 +3,339 @@
 <head>
        <meta charset="UTF-8">
        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       <meta name="description" content="instagram ui,Bootstrap 5, sass">
-       <title>Instagram UI Design By Sass</title>
+       <meta name="description" content="shop,Ecommerce,bootstrap5.3 sass">
+       <title>Shop Ecommerce site Template</title>
+       <!-- favi-icon of ecomerce site -->
+       <link rel="shortcut icon" href="./images/header/logo.png" type="image/x-icon">
        <!-- bootstrap css -->
        <link rel="stylesheet" href="css/bootstrap-5.3.min.css">
+       <!-- owl carousel min css -->
+       <link rel="stylesheet" href="css/owl.carousel-o.min.css">
+       <!-- owl-carousel default min css -->
+        <link rel="stylesheet" href="css/owl.theme.default.min.css">
+        <!-- owl-carousel theme green min css -->
+        <link rel="stylesheet" href="css/owl.theme.green.min.css"> 
+        <!-- animate- min css   -->
+       <link rel="stylesheet" href="css/animate.min.css">
        <!-- remixicon css -->
        <link rel="stylesheet" href="css/remixicon.css">
+       <!-- magnific-popup min css -->
+        <link rel="stylesheet" href="css/magnific-popup.min.css">
        <!-- custom css file -->
        <link rel="stylesheet" href="css/style.css">
+       <!-- responsive css -->
+       <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
-       <!-- instagram home page area -->
-       <!-- preloader -->
-       <div class="preloader">
-              <div></div>
-              <div></div>
-              <div></div>
-       </div>
-       <!-- preloader -->
-       <!-- home page -->
-       <section class="instagram-home-page-bg instagram-home-page-area bg-white">
-              <div class="vertically-center-area instagram-home-page-wraper-area text-center">
-                     <!-- logo -->
-                     <a href="index.html" class="instagram-logo"><img src="./images/instagram-home-page-img/Instagram Logo.svg" alt="instagram"></a>
-                     <!-- prifile image seting area -->
-                     <form action="#" id="instagam-user-profile">
-                            <div>
-                                   <label for="form-label" class="border-1">
-                                          <div class="profile-img">
-                                                 <img src="./images/instagram-home-page-img/Instagram Logo.svg" id="preview-img" alt="show instagram user image">
-                                          </div>
-                                   </label>
-                                   <input type="file" id="form-label" name="instagram User Name" class="form-control" accept="image/*">
-                                   <h1 id="file-name" class="mt-4 mb-4"></h1>
-                                   <a href="login.html" class="login-btn d-inline-block py-[14px]">Log In</a>
-                                   <a href="home-page.html" class="instagram-main-account-link">Switch accounts</a>
-                            </div>
-                     </form>
-              </div>
-              <hr class="horizontal-line">
-              <div class="instagram-home-page-bottom-area text-center">
-                     <p class="instagram-bottom-text">Don't have an account? <a href="sign-up.html" class="sign-up-text">Sign Up</a></p>
-                     <div class="instagram-dark-border m-auto mb-4"></div>
-              </div>
-       </section>
-       <!-- home page -->
+      <!-- preloader -->
+      <div class="preloader">
+         <div class="loader"></div>
+      </div>
+      <!-- +===========================
+      Header 
+      =========================+-->
+      <!-- header top -->
+      <header class="header-area bg-light shadow-sm py-2" id="stikcy-header">
+         <div class="container-fluid">
+            <div class="row align-items-center justify-content-between">
+               <!-- header logo -->
+               <div class="col-lg-3">
+                  <a href="index.html" class="logo">
+                        <img src="./images/header/logo.png" alt="logo">
+                  </a>
+               </div>
+               <!-- header menu area -->
+               <div class="col-lg-6 text-center">
+                  <nav>
+                     <ul>
+                        <li class="d-inline-block active">
+                           <a href="index.html">Home 
+                              <i class="ri ri-arrow-down-s-fill"></i>
+                           </a>
+                           <!-- dropdown menu -->
+                           <div class="dropdown-menu-item text-start">
+                              <ul>
+                                 <li>
+                                    <a href="index.html">Home one</a>
+                                 </li>
+                                 <li>
+                                    <a href="home-two.html">Home two</a>
+                                 </li>
+                              </ul>
+                           </div>
+                        </li>
+                        <li class="d-inline-block">
+                           <a href="about.html">About</a>
+                        </li>
+                        <li class="d-inline-block">
+                           <a href="service.html">
+                              Service
+                              <i class="ri ri-arrow-down-s-fill"></i>
+                           </a>
+                           <!-- dropdown menu -->
+                           <div class="dropdown-menu-item text-start">
+                              <ul>
+                                 <li>
+                                    <a href="service.html">Service One</a>
+                                 </li>
+                                 <li>
+                                    <a href="service-details.html">Service Details</a>
+                                 </li>
+                                 <li>
+                                    <a href="service-more-item.html">Service More Items</a>
+                                 </li>
+                              </ul>
+                           </div>
+                        </li>
+                        <li class="d-inline-block">
+                           <a href="contact.html">Contact</a>
+                        </li>
+                     </ul>
+                  </nav>
+               </div>
+               <!-- header download cv button -->
+               <div class="col-lg-3 text-end">
+                  <a href="download.html" class="butn butn-light butn-secondary">
+                     Login <i class="ri ri-user-6-fill"></i>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </header>
+      <!-- header top -->
+      <!-- +===========================
+      Header End
+      =========================+-->
 
-       <!-- Navbar -->
-<script src="js/bootstrap-5.3.0.bundle.min.js"></script> 
-<script src="js/script.js"></script>
+      <!-- +===========================
+      Main start
+      =========================+-->
+      <main>
+         <!-- hero area -->
+         <section class="hero-area section-bg bg-light pt-180 pb-200 position-relative overflow-hidden" data-overlay="7">
+            <div class="container">
+               <div class="row">
+                  <div class="col-12 col-xl-6 col-lg-6 col-md-6 d-flex align-items-center justify-content-center flex-column">
+                     <!-- hero content area -->
+                     <div class="hero-left-area position-relative z-1">
+                        <h2 class="hero-title mb-30 wow animate__animated animate__fadeInDown animate__infinite animate__delay-2s animate__slow animate__fadeIn">
+                           Want anything to be <br>
+                           easy with LaslessVPN
+                        </h2>
+                        <p class="hero-desc mb-30 text-white animate__animated animate__fadeIn animate__infinite animate__delay-2s animate__slow">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos cumque itaque cupiditate perferendis asperiores repellendus explicabo esse maxime commodi!</p>
+                        <a href="#" class="butn butn-secondary butn-light shadow-sm animate__animated animate__fadeIn animate__infinite animate__delay-2s animate__slower">Get Started</a>
+                     </div>
+                  </div>
+                  <!-- hero image -->
+                  <div class="col-12 col-xl-6 col-lg-6 col-md-6">
+                     <div class="hero-right-area hero-img-area position-relative">
+                        <div class="shape-one_1 d-flex align-items-center gap-2 justify-content-center shadow-sm">
+                           <div class="shape-single-logo-img">
+                              <img src="./images/team-area/image-4.png" alt="shape-img">
+                           </div>
+                           <div class="shape-content">
+                              <h4 class="shape-title">Hello,World</h4>
+                              <p>Lorem ipsum dolor sit amet.</p>
+                           </div>
+                        </div>
+                        <div class="shape-two_2 d-flex align-items-center gap-2 justify-content-center shadow-sm">
+                           <div class="shape-single-logo-img">
+                              <img src="./images/team-area/image-4.png" alt="shape-img">
+                           </div>
+                           <div class="shape-content">
+                              <h4 class="shape-title">Hello,World</h4>
+                              <p>Lorem ipsum dolor sit amet.</p>
+                           </div>
+                        </div>
+                        <div class="shape-three_3"></div>
+                        <div class="hero-img position-relative z-1 animate__animated animate__fadeIn animate__infinite animate__delay-2s animate__slower">
+                           <img src="./images/hero/hero-image.png" alt="hero-img" class="w-100">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!-- hero area -->
+         <!-- counter area -->
+         <section class="counter-area bg-light pt-40 pb-40">
+            <div class="container">
+               <div class="row">
+                  <!-- item 1 -->
+                  <div class="col-12 col-xl-4 col-lg-4 col-md-6">
+                     <div class="single-counter d-flex align-items-center justify-content-center gap-2 animate__animated animate__fadeInLeft animate__slower">
+                        <div class="counter-logo">
+                           <i class="ri ri-user-3-fill"></i>
+                        </div>
+                        <div class="counter-content">
+                           <div class="counter-number mb-10">
+                              <span class="mb-10 f-700 pr-10 counter">90</span> +
+                           </div>
+                           <p class="f-700 mb-0">Users</p>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- item 2 -->
+                  <div class="col-12 col-xl-4 col-lg-4 col-md-6 animate__animated animate__fadeInLeft animate__slow animate__delay-1s">
+                     <div class="single-counter d-flex align-items-center justify-content-center gap-2">
+                        <div class="counter-logo">
+                           <i class="ri ri-map-fill"></i>
+                        </div>
+                        <div class="counter-content">
+                           <div class="counter-number mb-10">
+                              <span class="mb-10 f-700 pr-10 counter">120</span> +
+                           </div>
+                           <p class="f-700 mb-0">Location</p>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- item 3 -->
+                  <div class="col-12 col-xl-4 col-lg-4 col-md-6 animate__animated animate__fadeInLeft animate__fast animate__delay-2s">
+                     <div class="single-counter border-end-0 d-flex align-items-center justify-content-center gap-2">
+                        <div class="counter-logo">
+                           <i class="ri ri-task-line"></i>
+                        </div>
+                        <div class="counter-content">
+                           <div class="counter-number mb-10">
+                              <span class="mb-10 f-700 pr-10 counter">10</span> +
+                           </div>
+                           <p class="f-700 mb-0">Work</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!-- counter area -->
+         <!-- features -->
+         <section class="features pt-180 pb-180">
+            <div class="container">
+               <div class="row">
+                  <div class="col-12 col-xl-6 col-lg-6 col-md-6">
+                     <div class="features-left-image-area">
+                        <img src="./images/hero/hero-image.png" alt="features-img" class="w-100"></div>
+                  </div>
+                  <div class="col-12 col-xl-6 col-lg-6 col-md-6">
+                     <div class="features-right-content-area">
+                        <h2 class="section-title mb-30 features-title">
+                           We provide many <br>
+                           features . you can use
+                        </h2>
+                        <p class="mb-30 featurs-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque accusantium laborum hic autem incidunt fuga? Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                        <ul class="features-single-list">
+                           <li>ipsum dolor sit amet consectetur adipisicing.</li>
+                           <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+                           <li>sit amet consectetur adipisicing.</li>
+                           <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+                        </ul>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!-- features -->
+         <!-- choose plan area -->
+         <section class="choose-plan pt-180 pb-180 bg-light">
+            <div class="container">
+               <div class="row">
+                  <div class="col-lg-6 offset-lg-3 col-12 col-xl-6 col-md-6 offset-md-3 text-center mb-40">
+                     <div class="section-title">
+                        <h2 class="choose-title">Choose Your plan</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis porro sunt molestiae, sequi consequatur delectus? Voluptate veritatis nobis optio animi? Ipsa autem aliquam temporibus excepturi?</p>
+                     </div>
+                  </div>
+               </div>
+               <!-- plans list -->
+               <div class="row">
+                  <div class="col-12 col-xl-4 col-lg-4 col-md-6 mb-40">
+                     <div class="single-choose-item">
+                        <div class="choose-logo mb-30">
+                           <i class="ri ri-coins-fill"></i>
+                        </div>
+                        <div class="single-choose-sub-title mb-30">
+                           <h4 class="sub-title">Our planing</h4>
+                        </div>
+                        <ul class="single-choose-list-categrory features-single-list">
+                           <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                           <li>consectetur adipisicing elit.</li>
+                           <li>sit amet consectetur adipisicing elit.</li>
+                           <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                        </ul>
+                     </div>
+                  </div>
+                  <!-- item 2 -->
+                  <div class="col-12 col-xl-4 col-lg-4 col-md-6 mb-40">
+                     <div class="single-choose-item">
+                        <div class="choose-logo mb-30">
+                           <i class="ri ri-coins-fill"></i>
+                        </div>
+                        <div class="single-choose-sub-title mb-30">
+                           <h4 class="sub-title">Our planing</h4>
+                        </div>
+                        <ul class="single-choose-list-categrory features-single-list">
+                           <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                           <li>consectetur adipisicing elit.</li>
+                           <li>sit amet consectetur adipisicing elit.</li>
+                           <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                        </ul>
+                     </div>
+                  </div>
+                  <!-- item 3 -->
+                  <div class="col-12 col-xl-4 col-lg-4 col-md-6">
+                     <div class="single-choose-item active">
+                        <div class="choose-logo mb-30">
+                           <i class="ri ri-coins-fill"></i>
+                        </div>
+                        <div class="single-choose-sub-title mb-30">
+                           <h4 class="sub-title">Our planing</h4>
+                        </div>
+                        <ul class="single-choose-list-categrory features-single-list">
+                           <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                           <li>consectetur adipisicing elit.</li>
+                           <li>sit amet consectetur adipisicing elit.</li>
+                           <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!-- choose plan area -->
+      </main>
+      <!-- +===========================
+      Main End
+      =========================+-->
+       <!-- jquery -->
+       <script src="js/vendor/jquery-1.12.4.min.js"></script>
+      <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+       <!-- jquery mordernizer -->
+       <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+       <!-- ajax form js -->
+       <!-- <script src="js/ajax-form.js"></script> -->
+       <!-- bootstrap min js -->
+      <script src="js/bootstrap-5.3.0.bundle.min.js"></script> 
+      <!-- owl-carousel min js -->
+      <script src="js/owl.carousel.min.js"></script>
+      <!-- popper min js  -->
+      <script src="js/popper.min.js"></script>
+      <!-- wow min js -->
+      <script src="js/wow.min.js"></script>
+       <!-- isotope min js -->
+       <script src="js/isotope.pkgd.min.js"></script>
+       <!-- scrollup min js -->
+       <script src="js/jquery.scrollUp.min.js"></script>
+       <!-- slick min js -->
+       <script src="js/slick.min.js"></script>
+       <!-- magnafic popup min js -->
+      <script src="js/jquery.magnific-popup.min.js"></script>
+      <!-- counter up min js -->
+      <script src="js/jquery.counterup1.0.min.js"></script>
+      <!-- counter up waypoint min js -->
+      <script src="js/waypoints1.6.2.min.js"></script>
+      <!-- image loaded min js -->
+      <script src="js/imagesloaded.pkgd.min.js"></script>
+       <!-- vanila js script js -->
+       <script src="js/script.js"></script>
+       <!-- main script js -->
+       <script src="js/main.js"></script>
 </body>
 </html>
