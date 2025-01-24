@@ -13,6 +13,25 @@
 //       }
 // })
 
+// switch button
+let checkbox_box = document.querySelector('#checkbox');
+    let monthPackage = document.querySelectorAll('.month');
+    let yearPackage = document.querySelectorAll('.year');
+
+    checkbox_box.addEventListener('change', () => {
+      if (checkbox_box.checked) {
+        yearPackage.forEach((e) => e.classList.add('active'));
+        yearPackage.forEach((e) => e.classList.remove('hidden'));
+        monthPackage.forEach((e) => e.classList.remove('active'));
+        monthPackage.forEach((e) => e.classList.add('hidden'));
+      } else {
+        yearPackage.forEach((e) => e.classList.remove('active'));
+        yearPackage.forEach((e) => e.classList.add('hidden'));
+        monthPackage.forEach((e) => e.classList.add('active'));
+        monthPackage.forEach((e) => e.classList.remove('hidden'));
+      }
+    });
+
 
 
 

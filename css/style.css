@@ -1102,14 +1102,14 @@ p.another_color {
 }
 
 .italic {
-  font-family: "Caveat", serif;
+  font-family: "Poppins", serif;
 }
 
 p {
   font-size: 16px;
   font-weight: 500;
   line-height: 22px;
-  font-family: "Caveat", serif;
+  font-family: "Poppins", serif;
   color: rgba(0, 0, 0, 0.6);
 }
 
@@ -1117,7 +1117,7 @@ span {
   font-size: 40px;
   font-weight: bold;
   color: #000;
-  font-family: "Caveat", serif;
+  font-family: "Poppins", serif;
 }
 
 hr {
@@ -1753,6 +1753,148 @@ section.counter-area .single-counter .counter-logo i:hover {
 
 .choose-plan .single-choose-item:hover p, .choose-plan .single-choose-item.active p, .choose-plan .single-choose-item:hover h4, .choose-plan .single-choose-item.active h4, .choose-plan .single-choose-item:hover li, .choose-plan .single-choose-item.active li, .choose-plan .single-choose-item:hover .choose-logo i, .choose-plan .single-choose-item.active .choose-logo i {
   color: #fff;
+}
+
+.pricing-area .pricing-button-group .switch {
+  width: 100px;
+  height: 50px;
+  background: var(--secondary);
+  line-height: 50px;
+  text-align: center;
+  border-radius: 50px;
+  position: relative;
+}
+
+.pricing-area .pricing-button-group .switch form label::before {
+  content: "";
+  width: 40px;
+  height: 40px;
+  background: #000;
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+  transition: 0.4s ease-in-out;
+  border-radius: 50px;
+}
+
+.pricing-area .pricing-button-group .switch form input[type=checkbox] {
+  display: none;
+}
+
+.pricing-area .pricing-button-group .switch form input[type=checkbox]:checked + label::before {
+  background-color: var(--body-bg);
+  left: 54%;
+}
+
+.pricing-area .pricing-button-group .switch form label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.package-features ul li {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 10px;
+  transition: 0.5s ease-in-out;
+  font-family: "poppins", sans-serif;
+  padding-left: 35px;
+}
+
+.package-features ul li.not-active {
+  position: relative;
+  z-index: 1;
+}
+
+.package-features ul li.not-active::after {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  content: "!";
+  width: 15px;
+  height: 15px;
+  line-height: 15px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: var(--body-color-light);
+  color: var(--border-light-color);
+  font-size: 12px;
+}
+
+.package-features ul li::before {
+  position: absolute;
+  content: "\f2ea";
+  font-family: "remixicon";
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  font-size: 15px;
+  width: 20px;
+  height: 20px;
+  background: var(--secondary);
+  border-radius: 50%;
+  line-height: 20px;
+  text-align: center;
+  color: #fff;
+  /* font-family: 'remixicon'; */
+}
+
+.pricing-area .pricing-table-area .pricing-single-table {
+  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2);
+  padding: 50px;
+  border-radius: 10px;
+  min-height: 500px;
+  height: 100%;
+  transition: 0.5s ease-in-out;
+  position: relative;
+  z-index: 1;
+}
+
+.pricing-area .pricing-table-area .pricing-single-table::after, .pricing-area .pricing-table-area .pricing-single-table.active::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  border-radius: 10px;
+  color: #fff;
+  z-index: -1;
+  transition: 0.6s ease-in-out;
+  background: var(--primary);
+  content: "";
+}
+
+.pricing-area .pricing-table-area .pricing-single-table.active h4, .pricing-area .pricing-table-area .pricing-single-table.active h2,
+.pricing-area .pricing-table-area .pricing-single-table.active p,
+.pricing-area .pricing-table-area .pricing-single-table.active ul li,
+.pricing-area .pricing-table-area .pricing-single-table h4, .pricing-area .pricing-table-area .pricing-single-table h2,
+.pricing-area .pricing-table-area .pricing-single-table p,
+.pricing-area .pricing-table-area .pricing-single-table ul li {
+  transition: 0.5s ease-in-out;
+  transition-duration: 0.5s;
+}
+
+.pricing-area .pricing-table-area .pricing-single-table.active h4, .pricing-area .pricing-table-area .pricing-single-table.active h2, .pricing-area .pricing-table-area .pricing-single-table.active p, .pricing-area .pricing-table-area .pricing-single-table.active ul li, .pricing-area .pricing-table-area .pricing-single-table:hover h4, .pricing-area .pricing-table-area .pricing-single-table:hover h2, .pricing-area .pricing-table-area .pricing-single-table:hover p, .pricing-area .pricing-table-area .pricing-single-table:hover ul li {
+  color: var(--border-light-color);
+}
+
+.pricing-area .pricing-table-area .pricing-single-table.active::after, .pricing-area .pricing-table-area .pricing-single-table:hover::after {
+  height: 100%;
+}
+
+.active {
+  display: block;
+}
+
+.hidden {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */
